@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography } from "antd";
 import "./PokeCard.scss";
+import { PokeType } from "../PokeType/PokeType";
 
 const { Text, Title } = Typography;
 
@@ -16,8 +17,7 @@ export const PokeCard = () => {
           Bulbasaur
         </Title>
         <div className="pokedex-card__types">
-          <Text>Grass</Text>
-          <Text>Poison</Text>
+          <PokeType type={"normal"}>normal</PokeType>
         </div>
       </div>
     </div>

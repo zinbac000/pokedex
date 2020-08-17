@@ -1,0 +1,78 @@
+.pokedex-card {
+  &:hover {
+    -webkit-animation: pokeBounce 0.5s ease-out;
+    animation: pokeBounce 0.5s ease-out;
+  }
+
+  a {
+    display: block;
+    border-radius: 10px;
+
+    background-color: #f2f2f2;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    padding: 15px;
+
+    h3.ant-typography {
+      font-size: 1.5rem;
+
+      margin-top: 16px;
+
+      @media screen and (min-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__content &__number {
+    color: #919191;
+
+    font-weight: bold;
+    font-size: 0.9rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__types {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@-webkit-keyframes pokeBounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pokeBounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

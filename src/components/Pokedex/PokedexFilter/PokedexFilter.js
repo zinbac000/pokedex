@@ -14,7 +14,9 @@ export const PokedexFilter = () => {
           <Row justify="space-between">
             <Col span={24} md={11}>
               <div className="pokedex-filter__search">
-                <Title level={2}>Name or Number</Title>
+                <Title className="pokedex-filter__title" level={2}>
+                  Name or Number
+                </Title>
                 <div className="pokedex-filter__input">
                   <AutoComplete />
                   <Button icon={<SearchOutlined />} />

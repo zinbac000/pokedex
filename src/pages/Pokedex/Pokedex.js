@@ -1,8 +1,8 @@
 import React from "react";
 import { Row, Col, Typography, BackTop } from "antd";
 import "./Pokedex.scss";
-import { PokedexFilter } from "../../components/PokedexFilter/PokedexFilter";
-import { PokedexResults } from "../../components/PokedexResults/PokedexResults";
+import { PokedexFilter } from "../../components/Pokedex/PokedexFilter/PokedexFilter";
+import { PokedexResults } from "../../components/Pokedex/PokedexResults/PokedexResults";
 
 const { Title } = Typography;
 
