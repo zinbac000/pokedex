@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Typography, BackTop } from "antd";
 import "./Pokedex.scss";
 import { PokedexFilter } from "../../components/Pokedex/PokedexFilter/PokedexFilter";
-import { PokedexResults } from "../../components/Pokedex/PokedexResults/PokedexResults";
+import PokedexResults from "../../components/Pokedex/PokedexResults/PokedexResults";
+
+import * as actions from "../../redux/actions/index";
+import { connect } from "react-redux";
 
 const { Title } = Typography;
 
-export const Pokedex = () => {
+export const Pokedex = (props) => {
+  useEffect(() => {
+    props.fetchPokemons();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <main className="pokedex-container">
       <Row justify="center">
@@ -20,3 +28,9 @@ export const Pokedex = () => {
     </main>
   );
 };
+
+const mapDispatchToProps = {
+  fetchPokemons: actions.fetchPokemon
+};
+
+export default connect(null, mapDispatchToProps)(Pokedex);

@@ -4,4 +4,16 @@
 
     padding: 30px;
   }
+
+  &__loadmore {
+    border: none;
+    background-color: #da471b;
+    color: #ffffff;
+
+    &:hover {
+      border: none;
+      background-color: #ee6b2f;
+      color: #ffffff;
+    }
+  }
 }

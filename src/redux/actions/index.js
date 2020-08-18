@@ -1,1 +1,1 @@
-export { fetchPokemon, fetchPokemonFailed, fetchPokemonSuccess, loadMorePokemons } from "./pokedex";
+export { fetchPokemon, loadMorePokemons } from "./pokedex";
