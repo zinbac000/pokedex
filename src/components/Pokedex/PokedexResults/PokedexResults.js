@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Col, Button, Space } from "antd";
+import { Row, Col, Button } from "antd";
 import { PokeCard } from "../PokeCard/PokeCard";
 import "./PokedexResults.scss";
 
